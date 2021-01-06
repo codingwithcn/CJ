@@ -1,7 +1,9 @@
 import re
 from collections import Counter
 import spacy
-
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 word2vec = spacy.load('en_core_web_sm')
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
